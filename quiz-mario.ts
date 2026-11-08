@@ -56,7 +56,7 @@ class superMario extends Mario {
         else {
             this.hp = this.hp -= 1;
             this.currentform = "mario";
-            return `HP Berkurang Menjadi ${this.hp}, fireMario Berubah Menjadi ${this.currentform}`;
+            return `HP Berkurang Menjadi ${this.hp}, superMario Berubah Menjadi ${this.currentform}`;
         }
     }
 
