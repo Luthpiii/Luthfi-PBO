@@ -17,12 +17,12 @@ class Mario {
 
     bergerakKanan () : string {
         this.positionx = this.positionx += this.speed;
-        return `Mario Bergerak Maju Ke Kanan Sebanyak ${this.positionx} Block`;
+        return `${this.currentform} Bergerak Maju Ke Kanan Sebanyak ${this.positionx} Block`;
     }
 
     bergerakKiri () : string {
         this.positionx = this.positionx -= this.speed;
-        return `Mario Bergerak Mundur Ke Kiri Sebanyak ${this.positionx} Block`;
+        return `${this.currentform} Bergerak Mundur Ke Kiri Sebanyak ${this.positionx} Block`;
     }
 
     superMushroom () : string {
@@ -86,3 +86,4 @@ const firemario = new fireMario (2, 5, 0, 0, false, "fireMario");
 
 console.log(supermario.superStar());
 console.log(supermario.diSerang());
+console.log(firemario.bergerakKanan());
