@@ -39,7 +39,7 @@ class Mario {
 
     superStar () : string {
         this.invincible = true;
-        return `Mario Menjadi Invincible, Dan Mario Kebal Terhadap Serangan`;
+        return `${this.currentform} Menjadi Invincible, Dan ${this.currentform} Kebal Terhadap Serangan`;
     }
 
 }
@@ -47,11 +47,6 @@ class Mario {
 class superMario extends Mario {
     constructor (hp : number, speed : number, positionx : number, positiony : number, invincible : boolean , currentform : string) {
         super (hp, speed, positionx, positiony, invincible, currentform)
-    }
-
-    superStar () : string {
-        this.invincible = true;
-        return `superMario Menjadi Invincible, Dan superMario Kebal Terhadap Serangan`;
     }
 
     diSerang () : string {
@@ -72,11 +67,6 @@ class fireMario extends Mario {
         super (hp, speed, positionx, positiony, invincible, currentform)
     }
 
-    superStar () : string {
-        this.invincible = true;
-        return `fireMario Menjadi invincible, Dan fireMario Kebal Terhadap Serangan`;
-    }
-
     diSerang () : string {
         if(this.invincible == true){
             return `fireMario Kebal Serangan`;
@@ -94,4 +84,4 @@ const mario = new Mario (1, 5, 0, 0, false, "mario");
 const supermario = new superMario (2, 5, 0, 0, false, "superMario");
 const firemario = new fireMario (2, 5, 0, 0, false, "fireMario");
 
-console.log(mario.superStar());
+console.log(firemario.diSerang());
